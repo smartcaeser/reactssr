@@ -9,7 +9,7 @@ import App from './src/App';
 
 const app = express();
 app.use(express.static('./build',{index : false}));
-
+//handle all requests
 app.get('/*',(req,res) => {
 
     const sheet = new ServerStyleSheet();
