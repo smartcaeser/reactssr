@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { RecoilRoot } from 'recoil';
 import { About } from './pages/about';
 import { Articles } from './pages/articles';
 import { Home } from './pages/home';
@@ -33,10 +34,13 @@ function App() {
             <Home />
           </Route>
           <Route path="/about">
+            
             <About />
           </Route>
           <Route path="/articles">
-            <Articles />
+            <RecoilRoot>
+              <Articles />
+            </RecoilRoot>
           </Route>
         </Switch>
       </div>

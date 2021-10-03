@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {
-  BrowserRouter,
-  BrowserRouter as Router
+  BrowserRouter
 } from "react-router-dom";
 ReactDOM.hydrate(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      
+        <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
