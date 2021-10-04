@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { About } from './pages/about';
 import { Articles } from './pages/articles';
+import { Contact } from './pages/contact';
 import { Home } from './pages/home';
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
           <li>
             <Link to="/articles">Articles</Link>
           </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
 
         <hr />
@@ -37,6 +41,9 @@ function App() {
           </Route>
           <Route path="/articles">
             <Articles />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
       </div>
